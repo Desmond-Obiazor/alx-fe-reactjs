@@ -16,8 +16,8 @@ function App() {
         <AddRecipeForm />
         <RecipeList />
         <Routes>
-          <Route path="/recipe/:id" element={<RecipeDetails />} />
-          <Route path="/edit/:id" element={<EditRecipeForm />} />
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipe/:id" element={<RecipeDetails />} /> {/* Add RecipeDetails route */}
         </Routes>
       </div>
     </Router>
